@@ -15,7 +15,7 @@ const Diagram: React.FC = () => {
       {lines.map((line) => {
         const formPoint = points.find((point) => point.value === line.form);
         const toPoint = points.find((point) => point.value === line.to);
-        return  formPoint && toPoint ? <Line from={formPoint.position} to={toPoint.position} /> : null;
+        return  formPoint && toPoint ? <Line from={formPoint} to={toPoint} /> : null;
       })}
       {figures.map((figure) => <Figure points={figure} />)}
       {points.map((point) => <Gate gate={point} />)}
