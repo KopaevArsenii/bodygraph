@@ -1,8 +1,8 @@
 import React from 'react';
 import Figure from './Figure.tsx';
 import { figures, lines, points } from '../constants/figures.ts';
-import Point from './Point.tsx';
 import Line from './Line.tsx';
+import Gate from './Gate.tsx';
 
 const Diagram: React.FC = () => {
   const handleMouseMove = (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
@@ -18,7 +18,7 @@ const Diagram: React.FC = () => {
         return  formPoint && toPoint ? <Line from={formPoint.position} to={toPoint.position} /> : null;
       })}
       {figures.map((figure) => <Figure points={figure} />)}
-      {points.map((point) => <Point value={point.value} coordinate={point.position} />)}
+      {points.map((point) => <Gate gate={point} />)}
     </svg>
   );
 };

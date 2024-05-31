@@ -3,11 +3,7 @@ import Diagram from './Diagram.tsx';
 
 function App() {
 
-  return (
-    <div>
-      <Diagram />
-    </div>
-  )
+  return <Diagram />;
 }
 
 export default App

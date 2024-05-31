@@ -1,9 +1,9 @@
 import React from 'react';
-import { Coordinate } from '../types';
+import { Point } from '../types';
 
 interface LineProps {
-  from: Coordinate;
-  to: Coordinate;
+  from: Point;
+  to: Point;
 }
 
 const Line: React.FC<LineProps> = ({ from, to }) => {

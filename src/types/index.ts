@@ -6,6 +6,7 @@ export type Coordinate = {
 export type Point = {
   value: string,
   position: Coordinate,
+  active: boolean,
 }
 
 export type Line = {
