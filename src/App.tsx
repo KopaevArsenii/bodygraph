@@ -1,10 +1,11 @@
 import './App.css'
+import Diagram from './components/Diagram.tsx';
 
 function App() {
 
   return (
     <div>
-      init
+      <Diagram />
     </div>
   )
 }
