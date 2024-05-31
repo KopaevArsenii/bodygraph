@@ -1,4 +1,4 @@
-import { Coordinate, Point } from '../types';
+import { Coordinate, Line, Point } from '../types';
 
 export const figures: Coordinate[][] = [
   [{ x: 400, y: 0}, { x: 450, y: 100}, { x: 350, y: 100 }], // haed
@@ -9,7 +9,7 @@ export const figures: Coordinate[][] = [
   [{ x: 350, y: 700}, { x: 450, y: 700}, { x: 450, y: 800 }, { x: 350, y: 800 }], // root
   [{ x: 10, y: 550}, { x: 150, y: 625}, { x: 10, y: 700 }], // spleen
   [{ x: 790, y: 550}, { x: 650, y: 625}, { x: 790, y: 700 }], // solar
-  [{ x: 550, y: 475}, { x: 600, y: 575}, { x: 475, y: 550 }], // heart
+  [{ x: 550, y: 450}, { x: 600, y: 550}, { x: 475, y: 525 }], // heart
 ]
 
 export const points: Point[] = [
@@ -19,8 +19,8 @@ export const points: Point[] = [
   { value: "47", position: { x: 375, y: 140 }},
   { value: "24", position: { x: 400, y: 140 }},
   { value: "4", position: { x: 425, y: 140 }},
-  { value: "17", position: { x: 380, y: 165 }},
-  { value: "11", position: { x: 420, y: 165 }},
+  { value: "17", position: { x: 375, y: 165 }},
+  { value: "11", position: { x: 425, y: 165 }},
   { value: "43", position: { x: 400, y: 200 }},
   { value: "62", position: { x: 375, y: 265 }},
   { value: "23", position: { x: 400, y: 265 }},
@@ -41,15 +41,15 @@ export const points: Point[] = [
   { value: "46", position: { x: 425, y: 490 }},
   { value: "25", position: { x: 455, y: 455 }},
   { value: "2", position: { x: 400, y: 515 }},
-  { value: "26", position: { x: 500, y: 550 }},
-  { value: "51", position: { x: 525, y: 525 }},
-  { value: "21", position: { x: 545, y: 500 }},
-  { value: "40", position: { x: 580, y: 565 }},
+  { value: "26", position: { x: 500, y: 525 }},
+  { value: "51", position: { x: 525, y: 500 }},
+  { value: "21", position: { x: 545, y: 475 }},
+  { value: "40", position: { x: 580, y: 540 }},
   { value: "5", position: { x: 375, y: 590 }},
   { value: "14", position: { x: 400, y: 590 }},
   { value: "29", position: { x: 425, y: 590 }},
   { value: "16", position: { x: 365, y: 610 }},
-  { value: "20", position: { x: 365, y: 650 }},
+  { value: "27", position: { x: 365, y: 650 }},
   { value: "42", position: { x: 375, y: 670 }},
   { value: "3", position: { x: 400, y: 670 }},
   { value: "9", position: { x: 425, y: 670 }},
@@ -77,4 +77,38 @@ export const points: Point[] = [
   { value: "49", position: { x: 710, y: 650 }},
   { value: "55", position: { x: 740, y: 665 }},
   { value: "30", position: { x: 770, y: 680 }},
+]
+
+export const lines:Line[] = [
+  { form: "64", to: "47" },
+  { form: "61", to: "24" },
+  { form: "63", to: "4" },
+  { form: "17", to: "62" },
+  { form: "43", to: "23" },
+  { form: "11", to: "56" },
+  { form: "16", to: "48" },
+  { form: "20", to: "57" },
+  { form: "31", to: "7" },
+  { form: "8", to: "1" },
+  { form: "33", to: "13" },
+  { form: "12", to: "22" },
+  { form: "35", to: "36" },
+  { form: "45", to: "21" },
+  { form: "25", to: "26" },
+  { form: "40", to: "37" },
+  { form: "26", to: "44" },
+  { form: "6", to: "59" },
+  { form: "50", to: "27" },
+  { form: "15", to: "5" },
+  { form: "2", to: "14" },
+  { form: "46", to: "29" },
+  { form: "49", to: "19" },
+  { form: "55", to: "39" },
+  { form: "30", to: "41" },
+  { form: "32", to: "54" },
+  { form: "28", to: "38" },
+  { form: "18", to: "58" },
+  { form: "42", to: "53" },
+  { form: "3", to: "60" },
+  { form: "9", to: "52" },
 ]
