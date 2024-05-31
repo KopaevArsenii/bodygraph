@@ -21,7 +21,22 @@ const Line: React.FC<LineProps> = ({ from, to, fromActive, toActive }) => {
         y2={centerY}
         stroke={fromActive ? "blue" : "black"}
         strokeWidth="2"
-      />
+      >
+        <animate
+          attributeName="x2"
+          from={from.position.x}
+          to={centerX}
+          dur="1.5s"
+          fill="freeze"
+        />
+        <animate
+          attributeName="y2"
+          from={from.position.y}
+          to={centerY}
+          dur="1.5s"
+          fill="freeze"
+        />
+      </line>
       <line
         x1={to.position.x}
         y1={to.position.y}
@@ -29,7 +44,22 @@ const Line: React.FC<LineProps> = ({ from, to, fromActive, toActive }) => {
         y2={centerY}
         stroke={toActive ? "blue" : "black"}
         strokeWidth="2"
-      />
+      >
+        <animate
+          attributeName="x2"
+          from={to.position.x}
+          to={centerX}
+          dur="1.5s"
+          fill="freeze"
+        />
+        <animate
+          attributeName="y2"
+          from={to.position.y}
+          to={centerY}
+          dur="1.5s"
+          fill="freeze"
+        />
+      </line>
     </>
   );
 };

@@ -12,10 +12,6 @@ const App: React.FC = () => {
   const updateUi = () => setCounter((prev) => prev + 1);
 
   const [selectedPoints] = useState<Set<string>>(new Set<string>(initialSetValues));
-  // const handleMouseMove = (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
-  //   const { clientX, clientY } = event;
-  //   console.log(`Mouse Coordinates: X: ${clientX}, Y: ${clientY}`);
-  // };
 
   const handleRandom = () => {
     selectedPoints.clear();
@@ -27,7 +23,7 @@ const App: React.FC = () => {
 
   return (
     <div className="wrapper">
-      <button onClick={handleRandom} className="button">Randomize</button>
+      <button type="button" onClick={handleRandom} className="button">Randomize</button>
       <svg width="800" height="800">
         {lines.map((line) => {
           const formPoint = points.find((point) => point.value === line.form);
