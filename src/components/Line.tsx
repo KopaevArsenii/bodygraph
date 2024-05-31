@@ -4,9 +4,11 @@ import { Point } from '../types';
 interface LineProps {
   from: Point;
   to: Point;
+  fromActive: boolean,
+  toActive: boolean,
 }
 
-const Line: React.FC<LineProps> = ({ from, to }) => {
+const Line: React.FC<LineProps> = ({ from, to, fromActive, toActive }) => {
   const centerX = (from.position.x + to.position.x) / 2;
   const centerY = (from.position.y + to.position.y) / 2;
 
@@ -17,7 +19,7 @@ const Line: React.FC<LineProps> = ({ from, to }) => {
         y1={from.position.y}
         x2={centerX}
         y2={centerY}
-        stroke={from.active ? "blue" : "black"}
+        stroke={fromActive ? "blue" : "black"}
         strokeWidth="2"
       />
       <line
@@ -25,7 +27,7 @@ const Line: React.FC<LineProps> = ({ from, to }) => {
         y1={to.position.y}
         x2={centerX}
         y2={centerY}
-        stroke={to.active ? "blue" : "black"}
+        stroke={toActive ? "blue" : "black"}
         strokeWidth="2"
       />
     </>
