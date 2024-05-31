@@ -1,5 +1,6 @@
 // src/components/Node.tsx
 import React from 'react';
+import Point from './Point.tsx';
 
 interface NodeProps {
   points: { x: number, y: number }[];
@@ -12,6 +13,7 @@ const Figure: React.FC<NodeProps> = ({ points }) => {
   return (
     <g>
       <polygon points={pointsString} fill="grey" />
+      <Point value="1" coordinate={{ x: 0, y: 0}} />
     </g>
   );
 };
