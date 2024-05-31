@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Figure from './Figure.tsx';
-import { figures, lines, points } from '../constants/figures.ts';
-import Line from './Line.tsx';
-import Gate from './Gate.tsx';
+import Figure from '../Figure.tsx';
+import { figures, lines, points } from '../../constants/figures.ts';
+import Line from '../Line.tsx';
+import Gate from '../Gate.tsx';
 import './App.css'
 
 const initialSetValues = ["62", "24", "1", "2", "26", "44", "34", "32", "28", "27", "60", "49", "41"];
