@@ -1,5 +1,5 @@
 import './App.css'
-import Diagram from './components/Diagram.tsx';
+import Diagram from './Diagram.tsx';
 
 function App() {
 
