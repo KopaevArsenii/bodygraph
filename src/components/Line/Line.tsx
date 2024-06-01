@@ -27,7 +27,7 @@ const Line: React.FC<LineProps> = ({ from, to, fromActive, toActive }) => {
           x2={centerX}
           y2={centerY}
           stroke={fromActive ? "blue" : "black"}
-          strokeWidth="2"
+          strokeWidth="3"
         >
           <animate
             attributeName="x2"
@@ -56,7 +56,7 @@ const Line: React.FC<LineProps> = ({ from, to, fromActive, toActive }) => {
           x2={centerX}
           y2={centerY}
           stroke={toActive ? "blue" : "black"}
-          strokeWidth="2"
+          strokeWidth="3"
         >
           <animate
             attributeName="x2"
