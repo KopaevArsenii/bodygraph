@@ -1,0 +1,17 @@
+.line-animation-enter {
+  stroke: black;
+}
+
+.line-animation-enter-active {
+  stroke: blue;
+  transition: stroke 1.5s ease-in-out;
+}
+
+.line-animation-exit {
+  stroke: blue;
+}
+
+.line-animation-exit-active {
+  stroke: black;
+  transition: stroke 1.5s ease-in-out;
+}

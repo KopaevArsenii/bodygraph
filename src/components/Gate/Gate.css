@@ -1,0 +1,25 @@
+.gate-animation-enter .gate-text {
+  fill: black;
+}
+
+.gate-animation-enter-active .gate-text {
+  fill: white;
+  transition: fill 0.5s ease-in-out;
+}
+
+.gate-animation-enter-done .gate-text {
+  fill: white;
+}
+
+.gate-animation-exit .gate-text {
+  fill: white;
+}
+
+.gate-animation-exit-active .gate-text {
+  fill: black;
+  transition: fill 0.5s ease-in-out;
+}
+
+.gate-animation-exit-done .gate-text {
+  fill: black;
+}

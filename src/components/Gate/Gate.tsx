@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Point } from '../types';
+import { Point } from '../../types';
 
 interface GateProps {
   active: boolean,

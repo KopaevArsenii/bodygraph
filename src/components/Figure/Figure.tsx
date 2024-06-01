@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coordinate } from '../types';
+import { Coordinate } from '../../types';
 
 interface FigureProps {
   points: Coordinate[];
